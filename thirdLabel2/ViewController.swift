@@ -13,6 +13,9 @@ class ViewController: UIViewController {
     var toggleThis = true
     var myDate = Date()
     
+    
+    
+    
     @IBOutlet weak var tickle: UILabel!
     
     @IBOutlet weak var myLabelTime: UILabel!
@@ -21,11 +24,14 @@ class ViewController: UIViewController {
     
     @IBAction func showTime(_ sender: Any) {
         toggleThis = !toggleThis
+    
         print("you just click this button!")
         if !toggleThis {
         tickle.text = "Tickle !!!"
         tickle.backgroundColor = UIColor.green
-        myLabelTime.text = myDate.description
+        /* myLabelTime.text = myDate.description */
+        myLabelTime.text = convertDate(date: myDate)
+            
         }
         else {
             tickle.text = "Let play game"
@@ -37,6 +43,19 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+    }
+    
+    func convertDate(date: Date) -> String {
+        let format = DateFormatter()
+        format.dateFormat = "HH:mm:ss"
+        let formattedDate = format.string(from: date)
+        // print(formattedDate2)
+        let dateCurrent = date - date.timeIntervalSinceNow
+        let formattedDate2 = format.string(from: dateCurrent)
+        print("dateCurrent = ", dateCurrent.description)
+        print(" formattedDate2 = ", formattedDate2)
+        // return dateCurrent.description
+        return formattedDate2
     }
 
 
