@@ -13,7 +13,8 @@ class ViewController: UIViewController {
     var toggleThis = true
     var myDate = Date()
     
-    
+    var myString = ""
+    var myStringArray: [String] = []
     
     
     @IBOutlet weak var tickle: UILabel!
@@ -24,16 +25,36 @@ class ViewController: UIViewController {
     
     @IBAction func showTime(_ sender: Any) {
         toggleThis = !toggleThis
-    
+        var minute: Int
+        
         print("you just click this button!")
         if !toggleThis {
         tickle.text = "Tickle !!!"
         tickle.backgroundColor = UIColor.green
         /* myLabelTime.text = myDate.description */
         myLabelTime.text = convertDate(date: myDate)
+            myString = myLabelTime.text!
+            // myStringArray = myString.split(separator: ":")
+            myStringArray = myString.components(separatedBy: ":")
+            print("my string is now = ", myStringArray)
+            print("int = ", Int(myStringArray[1]) )
             
-        }
-        else {
+            minute = Int(myStringArray[1])!
+            if      (minute >=  0 && minute  < 15) {
+                print("one")
+                myLabelTime.backgroundColor = UIColor.yellow
+            }
+            else if (minute >= 15 && minute  < 30) {
+                print("two")
+            }
+            else if (minute >= 30 && minute  < 45) {
+                print("three")
+            }
+            else if (minute >= 45 && minute <= 59) {
+                print("four")
+            }
+            
+        } else {
             tickle.text = "Let play game"
             tickle.backgroundColor = UIColor.clear
             myLabelTime.text = "Time"
