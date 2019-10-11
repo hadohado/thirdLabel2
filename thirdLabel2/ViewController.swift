@@ -10,6 +10,12 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var myLabelTime: UILabel!
+    
+    @IBAction func showTime(_ sender: Any) {
+        print("you just click this button!")
+        myLabelTime.text = "Tickle !!!"
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
