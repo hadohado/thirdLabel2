@@ -10,11 +10,29 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    var toggleThis = true
+    var myDate = Date()
+    
+    @IBOutlet weak var tickle: UILabel!
+    
     @IBOutlet weak var myLabelTime: UILabel!
     
+
+    
     @IBAction func showTime(_ sender: Any) {
+        toggleThis = !toggleThis
         print("you just click this button!")
-        myLabelTime.text = "Tickle !!!"
+        if !toggleThis {
+        tickle.text = "Tickle !!!"
+        tickle.backgroundColor = UIColor.green
+        myLabelTime.text = myDate.description
+        }
+        else {
+            tickle.text = "Let play game"
+            tickle.backgroundColor = UIColor.clear
+            myLabelTime.text = "Time"
+        }
+        print(myDate.description)
     }
     override func viewDidLoad() {
         super.viewDidLoad()
