@@ -52,14 +52,14 @@ class ViewController: UIViewController {
             minuteString = myStringArray[1]
             
             //---------------------------------------------------------
-            /*
+            
             if let minute = Int(myStringArray[1]) { // this is correct
             // if let minute = Int(myStringArray[2]) {     // use second for quick debug
             
                 if      (minute >=  0 && minute  < 15) {
                     print("one")
-                    // myLabelTime.backgroundColor = UIColor.yellow
-                    myLabelTime.textColor = UIColor.green
+                        // myLabelTime.backgroundColor = UIColor.yellow
+                    // myLabelTime.textColor = UIColor.green
                     L1.backgroundColor = UIColor.yellow
                     L2.backgroundColor = UIColor.clear
                     L3.backgroundColor = UIColor.clear
@@ -67,8 +67,8 @@ class ViewController: UIViewController {
                 }
                 else if (minute >= 15 && minute  < 30) {
                     print("two")
-                    // myLabelTime.backgroundColor = UIColor.red
-                    myLabelTime.textColor = UIColor.red
+                        // myLabelTime.backgroundColor = UIColor.red
+                    // myLabelTime.textColor = UIColor.red
                     L1.backgroundColor = UIColor.clear
                     L2.backgroundColor = UIColor.yellow
                     L3.backgroundColor = UIColor.clear
@@ -76,8 +76,8 @@ class ViewController: UIViewController {
                 }
                 else if (minute >= 30 && minute  < 45) {
                     print("three")
-                    // myLabelTime.backgroundColor = UIColor.blue
-                    myLabelTime.textColor = UIColor.blue
+                        // myLabelTime.backgroundColor = UIColor.blue
+                    // myLabelTime.textColor = UIColor.blue
                     L1.backgroundColor = UIColor.clear
                     L2.backgroundColor = UIColor.clear
                     L3.backgroundColor = UIColor.yellow
@@ -85,8 +85,8 @@ class ViewController: UIViewController {
                 }
                 else if (minute >= 45 && minute <= 59) {
                     print("four")
-                    // myLabelTime.backgroundColor = UIColor.magenta
-                    myLabelTime.textColor = UIColor.magenta
+                        // myLabelTime.backgroundColor = UIColor.magenta
+                    // myLabelTime.textColor = UIColor.magenta
                     L1.backgroundColor = UIColor.clear
                     L2.backgroundColor = UIColor.clear
                     L3.backgroundColor = UIColor.clear
@@ -98,7 +98,7 @@ class ViewController: UIViewController {
             } else {
                 print("wrong !")
             }
-            */
+ 
             
             
             //---------------------------------------------------------
@@ -109,37 +109,37 @@ class ViewController: UIViewController {
                     print("one")
                     // myLabelTime.backgroundColor = UIColor.yellow
                     myLabelTime.textColor = UIColor.green
-                    L1.backgroundColor = UIColor.yellow
-                    L2.backgroundColor = UIColor.clear
-                    L3.backgroundColor = UIColor.clear
-                    L4.backgroundColor = UIColor.clear
+//                    L1.backgroundColor = UIColor.yellow
+//                    L2.backgroundColor = UIColor.clear
+//                    L3.backgroundColor = UIColor.clear
+//                    L4.backgroundColor = UIColor.clear
                 }
                 else if (second >= 15 && second  < 30) {
                     print("two")
                     // myLabelTime.backgroundColor = UIColor.red
                     myLabelTime.textColor = UIColor.red
-                    L1.backgroundColor = UIColor.clear
-                    L2.backgroundColor = UIColor.yellow
-                    L3.backgroundColor = UIColor.clear
-                    L4.backgroundColor = UIColor.clear
+//                    L1.backgroundColor = UIColor.clear
+//                    L2.backgroundColor = UIColor.yellow
+//                    L3.backgroundColor = UIColor.clear
+//                    L4.backgroundColor = UIColor.clear
                 }
                 else if (second >= 30 && second  < 45) {
                     print("three")
                     // myLabelTime.backgroundColor = UIColor.blue
                     myLabelTime.textColor = UIColor.blue
-                    L1.backgroundColor = UIColor.clear
-                    L2.backgroundColor = UIColor.clear
-                    L3.backgroundColor = UIColor.yellow
-                    L4.backgroundColor = UIColor.clear
+//                    L1.backgroundColor = UIColor.clear
+//                    L2.backgroundColor = UIColor.clear
+//                    L3.backgroundColor = UIColor.yellow
+//                    L4.backgroundColor = UIColor.clear
                 }
                 else if (second >= 45 && second <= 59) {
                     print("four")
                     // myLabelTime.backgroundColor = UIColor.magenta
                     myLabelTime.textColor = UIColor.magenta
-                    L1.backgroundColor = UIColor.clear
-                    L2.backgroundColor = UIColor.clear
-                    L3.backgroundColor = UIColor.clear
-                    L4.backgroundColor = UIColor.yellow
+//                    L1.backgroundColor = UIColor.clear
+//                    L2.backgroundColor = UIColor.clear
+//                    L3.backgroundColor = UIColor.clear
+//                    L4.backgroundColor = UIColor.yellow
                 } else {
                     print("not 1 to 4 second !!!")
                 }
