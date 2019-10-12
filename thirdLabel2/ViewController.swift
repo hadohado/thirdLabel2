@@ -21,10 +21,13 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var myLabelTime: UILabel!
     
-
+    @IBOutlet weak var L1: UILabel!
+  
     
     @IBAction func showTime(_ sender: Any) {
         toggleThis = !toggleThis
+        
+        var minuteString : String
         var minute: Int
         
         print("you just click this button!")
@@ -39,7 +42,22 @@ class ViewController: UIViewController {
             print("my string is now = ", myStringArray)
             print("int = ", Int(myStringArray[1]) )
             
+            minuteString = myStringArray[1]
+            
+            
             minute = Int(myStringArray[1])!
+            
+            // if let constantName = someOptional {
+                //statements using 'constantName'
+            //}  else {
+                // the value of someOptional is not set (or nil).
+            // }
+            
+            
+            // if let minute = Int(myStringArray[1]) {
+            // } else {
+            // }
+            
             if      (minute >=  0 && minute  < 15) {
                 print("one")
                 myLabelTime.backgroundColor = UIColor.yellow
