@@ -23,6 +23,11 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var L1: UILabel!
   
+    @IBOutlet weak var L2: UILabel!
+    
+    @IBOutlet weak var L3: UILabel!
+        
+    @IBOutlet weak var L4: UILabel!
     
     @IBAction func showTime(_ sender: Any) {
         toggleThis = !toggleThis
@@ -50,21 +55,36 @@ class ViewController: UIViewController {
                 if      (minute >=  0 && minute  < 15) {
                     print("one")
                     myLabelTime.backgroundColor = UIColor.yellow
+                    L1.backgroundColor = UIColor.yellow
+                    L2.backgroundColor = UIColor.clear
+                    L3.backgroundColor = UIColor.clear
+                    L4.backgroundColor = UIColor.clear
                 }
                 else if (minute >= 15 && minute  < 30) {
                     print("two")
                     myLabelTime.backgroundColor = UIColor.red
+                    L1.backgroundColor = UIColor.clear
+                    L2.backgroundColor = UIColor.yellow
+                    L3.backgroundColor = UIColor.clear
+                    L4.backgroundColor = UIColor.clear
                 }
                 else if (minute >= 30 && minute  < 45) {
                     print("three")
                     myLabelTime.backgroundColor = UIColor.blue
+                    L1.backgroundColor = UIColor.clear
+                    L2.backgroundColor = UIColor.clear
+                    L3.backgroundColor = UIColor.yellow
+                    L4.backgroundColor = UIColor.clear
                 }
                 else if (minute >= 45 && minute <= 59) {
                     print("four")
                     myLabelTime.backgroundColor = UIColor.magenta
+                    L1.backgroundColor = UIColor.clear
+                    L2.backgroundColor = UIColor.clear
+                    L3.backgroundColor = UIColor.clear
+                    L4.backgroundColor = UIColor.yellow
                 } else {
                     print("not 1 to 4 !!!")
-                    
                 }
                 
             } else {
