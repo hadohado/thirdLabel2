@@ -44,33 +44,39 @@ class ViewController: UIViewController {
             
             minuteString = myStringArray[1]
             
+            // if let minute = Int(myStringArray[1]) { // this is correct
+            if let minute = Int(myStringArray[2]) {     // use second for quick debug
             
-            minute = Int(myStringArray[1])!
+                if      (minute >=  0 && minute  < 15) {
+                    print("one")
+                    myLabelTime.backgroundColor = UIColor.yellow
+                }
+                else if (minute >= 15 && minute  < 30) {
+                    print("two")
+                    myLabelTime.backgroundColor = UIColor.red
+                }
+                else if (minute >= 30 && minute  < 45) {
+                    print("three")
+                    myLabelTime.backgroundColor = UIColor.blue
+                }
+                else if (minute >= 45 && minute <= 59) {
+                    print("four")
+                    myLabelTime.backgroundColor = UIColor.magenta
+                } else {
+                    print("not 1 to 4 !!!")
+                    
+                }
+                
+            } else {
+                print("wrong !")
+            }
             
             // if let constantName = someOptional {
-                //statements using 'constantName'
+            //statements using 'constantName'
             //}  else {
-                // the value of someOptional is not set (or nil).
+            // the value of someOptional is not set (or nil).
             // }
             
-            
-            // if let minute = Int(myStringArray[1]) {
-            // } else {
-            // }
-            
-            if      (minute >=  0 && minute  < 15) {
-                print("one")
-                myLabelTime.backgroundColor = UIColor.yellow
-            }
-            else if (minute >= 15 && minute  < 30) {
-                print("two")
-            }
-            else if (minute >= 30 && minute  < 45) {
-                print("three")
-            }
-            else if (minute >= 45 && minute <= 59) {
-                print("four")
-            }
             
         } else {
             tickle.text = "Let play game"
