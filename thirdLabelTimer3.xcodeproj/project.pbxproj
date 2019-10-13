@@ -16,7 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		7B96445123512CFC005B195A /* thirdLabel2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = thirdLabel2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B96445123512CFC005B195A /* thirdLabelTimer3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = thirdLabelTimer3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B96445423512CFC005B195A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7B96445623512CFC005B195A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7B96445923512CFC005B195A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -48,7 +48,7 @@
 		7B96445223512CFC005B195A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7B96445123512CFC005B195A /* thirdLabel2.app */,
+				7B96445123512CFC005B195A /* thirdLabelTimer3.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -70,9 +70,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7B96445023512CFC005B195A /* thirdLabel2 */ = {
+		7B96445023512CFC005B195A /* thirdLabelTimer3 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7B96446623512CFC005B195A /* Build configuration list for PBXNativeTarget "thirdLabel2" */;
+			buildConfigurationList = 7B96446623512CFC005B195A /* Build configuration list for PBXNativeTarget "thirdLabelTimer3" */;
 			buildPhases = (
 				7B96444D23512CFC005B195A /* Sources */,
 				7B96444E23512CFC005B195A /* Frameworks */,
@@ -82,9 +82,9 @@
 			);
 			dependencies = (
 			);
-			name = thirdLabel2;
+			name = thirdLabelTimer3;
 			productName = thirdLabel2;
-			productReference = 7B96445123512CFC005B195A /* thirdLabel2.app */;
+			productReference = 7B96445123512CFC005B195A /* thirdLabelTimer3.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +102,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 7B96444C23512CFC005B195A /* Build configuration list for PBXProject "thirdLabel2" */;
+			buildConfigurationList = 7B96444C23512CFC005B195A /* Build configuration list for PBXProject "thirdLabelTimer3" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,7 +115,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7B96445023512CFC005B195A /* thirdLabel2 */,
+				7B96445023512CFC005B195A /* thirdLabelTimer3 */,
 			);
 		};
 /* End PBXProject section */
@@ -293,8 +293,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.alpine.thirdLabel2;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.alpine.thirdLabelTimer3;
+				PRODUCT_NAME = thirdLabelTimer3;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -311,8 +311,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.alpine.thirdLabel2;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.alpine.thirdLabelTimer3;
+				PRODUCT_NAME = thirdLabelTimer3;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -321,7 +321,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7B96444C23512CFC005B195A /* Build configuration list for PBXProject "thirdLabel2" */ = {
+		7B96444C23512CFC005B195A /* Build configuration list for PBXProject "thirdLabelTimer3" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7B96446423512CFC005B195A /* Debug */,
@@ -330,7 +330,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7B96446623512CFC005B195A /* Build configuration list for PBXNativeTarget "thirdLabel2" */ = {
+		7B96446623512CFC005B195A /* Build configuration list for PBXNativeTarget "thirdLabelTimer3" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7B96446723512CFC005B195A /* Debug */,

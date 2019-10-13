@@ -145,7 +145,7 @@ class ViewController: UIViewController {
                 }
                 
             } else {
-                print("wrong second !")
+                print("wrong second  oh yeh!")
             }
             
             
