@@ -9,7 +9,10 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    var timerTop: Timer?
+    var runCount = 0
+    
     var toggleThis = true
     var myDate = Date()
     
@@ -18,17 +21,37 @@ class ViewController: UIViewController {
     
     
     @IBOutlet weak var tickle: UILabel!
-    
     @IBOutlet weak var myLabelTime: UILabel!
     
     @IBOutlet weak var L1: UILabel!
-  
     @IBOutlet weak var L2: UILabel!
-    
     @IBOutlet weak var L3: UILabel!
-        
     @IBOutlet weak var L4: UILabel!
+ 
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        var timeinc = 0
+        // Do any additional setup after loading the view.
+        
+        //-----------------------------------------
+        //  schedule a timer
+        //----------------------------------------
+        timerTop = Timer.scheduledTimer(timeInterval: 2.0, target: self, selector: #selector(fireTimer), userInfo: nil, repeats: true)
+        
+//        let timer = Timer.scheduledTimer(withTimeInterval: 7.0, repeats: true) { timer in
+//            print("Timer fired! = ", timeinc)
+//            timeinc = timeinc + 7
+//        }
+    }
     
+    @objc func fireTimer() {
+    print("Timer fired! ", runCount)
+    runCount += 1
+        if runCount == 5 {
+            timerTop?.invalidate()
+        }
+    }
+        
     @IBAction func showTime(_ sender: Any) {
         toggleThis = !toggleThis
         
@@ -164,10 +187,8 @@ class ViewController: UIViewController {
         }
         print(myDate.description)
     }
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-    }
+    
+    
     
     func convertDate(date: Date) -> String {
         let format = DateFormatter()
